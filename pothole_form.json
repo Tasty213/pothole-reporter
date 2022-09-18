@@ -1,0 +1,105 @@
+{
+    "name": "Pothole Reporting Test",
+    "organisation": "leeds",
+    "form": "RoadSurfaceDamage",
+    "stages": [
+        {
+            "endpoint": "ServiceRequest/Information",
+            "method": "POST",
+            "body": {},
+            "params": {}
+        },
+        {
+            "endpoint": "ServiceDetails/NatureOfProblem",
+            "method": "POST",
+            "body": {
+                "Problem": "Pothole(s)"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "Location/Accessibility",
+            "method": "POST",
+            "body": {
+                "CanPlacePin": "True"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "Location/Map",
+            "method": "POST",
+            "body": {
+                "X": "0",
+                "Y": "0"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "Location/ExactLocation",
+            "method": "POST",
+            "body": {
+                "Location": "here"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "ServiceDetails/PedestrianCrossing",
+            "method": "POST",
+            "body": {
+                "OnPedestrianCrossing": "False"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "ServiceDetails/RoadPosition",
+            "method": "POST",
+            "body": {
+                "Position": "In+vehicle+track"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "ServiceDetails/SizeAndDepth",
+            "method": "POST",
+            "body": {
+                "Size": "Small",
+                "Depth": "Shallow"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "FileUpload/FileUpload",
+            "method": "POST",
+            "body": {},
+            "params": {}
+        },
+        {
+            "endpoint": "ServiceDetails/FurtherInformation",
+            "method": "POST",
+            "body": {},
+            "params": {}
+        },
+        {
+            "endpoint": "Anonymity/Preference",
+            "method": "POST",
+            "body": {
+                "IsAnonymous": "true"
+            },
+            "params": {}
+        },
+        {
+            "endpoint": "Notifications/Emails",
+            "method": "POST",
+            "body": {
+                "Receipt": "True",
+                "update": "True",
+                "EmailAddress": "mylanagy@ema-sofia.eu",
+                "Summary": [
+                    "True",
+                    "false"
+                ]
+            },
+            "params": {}
+        }
+    ]
+}
